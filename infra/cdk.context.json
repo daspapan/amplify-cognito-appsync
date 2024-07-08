@@ -1,0 +1,31 @@
+{
+    "globals": {
+        "appName": "nextjs-cdk",
+        "hosting": {
+            "ghTokenName": "<github-token>",
+            "ghOwner": "daspapan",
+            "repo": "amplify-cognito-appsync"
+        }
+    },
+    "main": {
+        "stage": "prod",
+        "env": {
+            "account": "",
+            "region": ""
+        }
+    },
+    "staging": {
+        "stage": "stag",
+        "env": {
+            "account": "",
+            "region": ""
+        }
+    },
+    "develop": {
+        "stage": "dev",
+        "env": {
+            "account": "",
+            "region": ""
+        }
+    },
+}
