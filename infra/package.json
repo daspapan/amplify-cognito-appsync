@@ -11,7 +11,7 @@
     "test": "jest",
     "cdk": "cdk",
     "cdk:synth": "cdk synth",
-    "codegen": "cd lib/api && npx @aws-amplify/cli codegen && ../..",
+    "codegen": "cd lib/api && npx @aws-amplify/cli codegen && cd ../..",
     "build:resolvers": "node utils/build.mjs",
     "predeploy": "npm run codegen && npm run build:resolvers",
     "deploy": "npx aws-cdk deploy",
