@@ -47,7 +47,7 @@ export const createAppSyncAPI = (scope: Construct, props: AppSyncAPIProps) => {
 	const todosDS = api.addDynamoDbDataSource('TodoDS', props.todoTable)
 
 	// Add the resolvers that will make use of the datasource
-	/* api.createResolver('getTodoResolver', {
+	api.createResolver('getTodoResolver', {
 		typeName: 'Query',
 		fieldName: 'getTodo',
 		dataSource: todosDS,
@@ -85,7 +85,7 @@ export const createAppSyncAPI = (scope: Construct, props: AppSyncAPIProps) => {
 		dataSource: todosDS,
 		runtime: FunctionRuntime.JS_1_0_0,
 		code: Code.fromAsset(path.join(__dirname, 'JS_functions/deleteTodo.js')),
-	}) */
+	}) 
 
 	return api
 }

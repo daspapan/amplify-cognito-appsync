@@ -11,7 +11,7 @@ projects:
         codeGenTarget: typescript
         generatedFileName: codegen/API.ts
         docsFilePath: codegen
-        region: us-east-1
+        region: ap-south-1
         apiId: null
         frontend: javascript
         framework: react
