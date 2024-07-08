@@ -11,21 +11,21 @@
         "stage": "prod",
         "env": {
             "account": "",
-            "region": ""
+            "region": "ap-south-1"
         }
     },
     "staging": {
         "stage": "stag",
         "env": {
             "account": "",
-            "region": ""
+            "region": "ap-south-1"
         }
     },
     "develop": {
         "stage": "dev",
         "env": {
             "account": "",
-            "region": ""
+            "region": "ap-south-1"
         }
-    },
+    }
 }
