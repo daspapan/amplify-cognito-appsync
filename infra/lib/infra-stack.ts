@@ -30,7 +30,7 @@ export class InfraStack extends cdk.Stack {
     })
 
     // Amplify Hosting
-    const amplifyHosting = createAmplifyHosting(this, {
+    /* const amplifyHosting = createAmplifyHosting(this, {
       appName: appNameWithStage,
       account: context.env.account,
       branch: context.branch,
@@ -44,7 +44,7 @@ export class InfraStack extends cdk.Stack {
         region: this.region,
         apiUrl: api.graphqlUrl,
       }
-    })
+    }) */
 
     new cdk.CfnOutput(this, 'GraphQLApiUrl', {value: api.graphqlUrl})
     new cdk.CfnOutput(this, 'GraphQLApiId', {value: api.apiId})
@@ -52,7 +52,7 @@ export class InfraStack extends cdk.Stack {
     new cdk.CfnOutput(this, 'UserPoolClientId', {value: auth.userPoolClient.userPoolClientId})
     new cdk.CfnOutput(this, 'IdentityPoolId', {value: auth.identityPool.identityPoolId})
     new cdk.CfnOutput(this, 'Region', {value: this.region})
-    new cdk.CfnOutput(this, 'AmplifyAppId', {value: amplifyHosting.appId})
+    // new cdk.CfnOutput(this, 'AmplifyAppId', {value: amplifyHosting.appId})
 
   }
 }
