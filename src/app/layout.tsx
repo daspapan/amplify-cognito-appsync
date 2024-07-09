@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ConfigureAmplifyClientSide from "@/app/components/COnfigureAmplifyForClient";
+import ConfigureAmplifyClientSide from "@/app/components/ConfigureAmplifyForClient";
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
 
