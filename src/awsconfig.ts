@@ -12,7 +12,7 @@ export const config = {
 	},
 	API: {
 		GraphQL: {
-			endpoint: process.env.apiUrl || output.GraphQLAPIURL,
+			endpoint: process.env.apiUrl || output.GraphQLApiId,
 			region: process.env.region || output.Region,
 			defaultAuthMode: 'userPool' as any,
 		},
