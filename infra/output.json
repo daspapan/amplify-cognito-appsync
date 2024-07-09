@@ -1,0 +1,11 @@
+{
+  "nextjs-cdk-dev-Stack": {
+    "GraphQLApiId": "3kz4uyo5fzf3nhs54i36t3mx7q",
+    "UserPoolClientId": "7rqhd39anbbvpa28vd5q2hp7h9",
+    "UserPoolId": "ap-south-1_khbN2Bbsy",
+    "GraphQLApiUrl": "https://4y5ne5z455e43lk7akyalar4ci.appsync-api.ap-south-1.amazonaws.com/graphql",
+    "Region": "ap-south-1",
+    "IdentityPoolId": "ap-south-1:1fa48f1c-3aa3-4404-b99a-0235fd6f4ebb",
+    "AmplifyAppId": "d2cge4nkvm2ps9"
+  }
+}
