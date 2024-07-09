@@ -85,6 +85,13 @@ export function createAmplifyHosting(scope: Construct, props: AmplifyHostingProp
         }),
     })
 
+    // const domain = amplifyApp.addDomain('firststeppublicschool.com', {
+    //     enableAutoSubdomain: true,
+    //     autoSubdomainCreationPatterns: ['*', 'pr*'],
+    // });
+    // domain.mapRoot('dev')
+    // domain.mapSubDomain('dev', props.branch)
+
     amplifyApp.addBranch(props.branch, {
         stage: props.branch === 'main' ? 'PRODUCTION' : 'DEVELOPMENT',
         branchName: props.branch,
